@@ -1,4 +1,16 @@
 #!/usr/bin/python3
+#
+# This tool displays an entry from the latin-greek-roots.json
+# file. It is meant to be a simple study tool.
+#
+# Its noteworthy features are: it uses ANSI escape sequences to
+# produce colored output; it uses Python's format mini language
+# to display its output.
+#
+# To run it, type the following at the command line:
+#
+#   python3 WordRoots.py
+#
 
 from random import choice
 import json
@@ -65,5 +77,5 @@ class WordRoots():
 
 if __name__ == '__main__':
     wr = WordRoots()
-    wr.show( wr.rand())
+    wr.show(wr.rand())
 
