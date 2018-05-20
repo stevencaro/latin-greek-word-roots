@@ -40,7 +40,7 @@ class WordRoots():
     def rand(self):
         return choice(self.entries)
 
-    def show(self, entry):x#
+    def show(self, entry):
         # The following uses ANSI escape codes to print colored text in the terminal.
         # The colored text is for the titles of the fields in the entry.
         titles = { 'root' : colors.BLUE + 'Root'      + colors.ENDC,
@@ -65,3 +65,5 @@ class WordRoots():
 
 if __name__ == '__main__':
     wr = WordRoots()
+    wr.show( wr.rand())
+
